@@ -2,6 +2,11 @@ pragma solidity ^0.5.0;
 
 contract Micropayments {
 
+    //This contract assigns 2 accounts as contractees in a payment channel
+    //Contractees can then lock funds into the contract, and make infinite payments between one another at a minimal fee
+    //Once either contractee withdraws the funds, the contract is reset to the 0x0 account so that it can be reopened with different contractees
+    //Note that this contract is just an example and has not been audited for security concerns
+
     address payable public contractee1;
     address payable public contractee2;
     uint public balance1;
