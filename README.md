@@ -4,9 +4,9 @@
 
 ## Notes
 
-This repo contains topics and code examples covered in the SANBA online technical blockchain workshop on the 28th of March 2020. Shown in the videos are the Solidity smart contract examples created in [Remix IDE](remix.ethereum.org).
+This repo contains code examples covered in the [SANBA](sanba.co.za) online technical blockchain workshop on the 28th of March 2020, presented by [@SatoshiSingh](https://twitter.com/satoshisingh) of [CoinEd](https://coined.co.za). Shown in the videos are the Solidity smart contract examples created in [Remix IDE](remix.ethereum.org).
 
-At the time of the webinar, a bug emerged in the dApp presentation which could not be solved. This bug involved different behaviour patterns in the dApp depending on which Web3 provider address was selected in Metamask. A possible reason may be the environment setup.
+At the time of the webinar, a bug emerged in the dApp presentation which could not be solved. This bug involved different behaviour patterns in the dApp depending on which Web3 provider address was selected in Metamask. A possible reason may be the environment setup. Work will continue to resolve this issue.
 
 ## Required Installations
 
