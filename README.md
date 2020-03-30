@@ -8,7 +8,7 @@ Code examples covered in the [SANBA](sanba.co.za) online technical blockchain wo
 
 ## Required
 
-[Ganache-cli](https://truffleframework.com/ganache)
+[Ganache](https://truffleframework.com/ganache)
 
 [Truffle](https://truffleframework.com/truffle)
 
