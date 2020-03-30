@@ -1,5 +1,5 @@
 # SANBA blockchain technical workshop 28 March 2020
-Webinar intro to cryptocurrencies/blockchains and smart contracts/dApps
+*Webinar intro to cryptocurrencies/blockchains and smart contracts/dApps*
 
 
 ## Notes
