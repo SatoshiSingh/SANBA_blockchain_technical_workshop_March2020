@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Micropayments Channel</title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+    <!--
+        Need to add
+        1) addContractees - takes in 2 adresses
+        2) lockFunds - takes in an int
+        3) pay - takes in an int
+        4) setExpirationTime - takes in an int
+        5) withdraw button
+        6) getBalance of contract button
+        7) getBalance of contractee1 button
+        8) getBalance of contractee2 button
+        9) isActive
+    -->
+
+    <!--Start YOUR Front End code from here-->
+    <div class="app">
+        <div class="container">
+            <h1 class="text-center">Micropayments channel</h1>
+            <h3 class="text-center" id="accountAddress">Current account address:</h3>
+            <h3 class="text-center" id="feedback">Last action: Contract created</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Address of contractee 1" id="Address1">
+                            <input type="text" class="form-control" placeholder="Address of contractee 2" id="Address2">
+                            <button type="button" onclick="App.addContractees()" class="btn btn-primary pull-left mt-3">Initiate</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <form>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Specify funds to lock" id="Lock">
+                            <button type="button" onclick="App.lockFunds()" class="btn btn-primary pull-left mt-3">Lock funds</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4">
+                    <form>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Value to pay counterparty" id="Pay">
+                            <button type="button" onclick="App.pay()" class="btn btn-primary pull-left mt-3">Pay counterparty</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <button type="button" onclick="App.withdraw()" class="btn btn-primary pull-left mt-3">withdraw</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" onclick="App.getBalance()" class="btn btn-primary pull-left mt-3">Balance of contract</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" onclick="App.getBalanceContractee1()" class="btn btn-primary pull-left mt-3">Balance of contractee 1</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" onclick="App.getBalanceContractee2()" class="btn btn-primary pull-left mt-3">Balance of contractee 2</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" onclick="App.getContractee1()" class="btn btn-primary pull-left mt-3">Contractee 1</button>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" onclick="App.getContractee2()" class="btn btn-primary pull-left mt-3">Contractee 2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
